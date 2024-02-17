@@ -1,0 +1,197 @@
+# Visual Studio Code
+.vscode/
+
+# Visual Studio generated files and folders
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.opensdf
+*.cachefile
+*.VC.db
+*.filters
+*.vcxproj
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+
+# Compiled Object files, Static and Dynamic libs (binaries)
+*.slo
+*.lo
+*.o
+*.obj
+*.i
+*.dll
+*.exe
+*.lib
+*.pdb
+*.idb
+*.manifest
+*.tlog
+*.log
+*.zip
+*.ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+*.ilk
+*.log
+*.dep
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_i.c
+*_p.c
+*.log
+*.bak
+*.cache/
+*.ilk
+*.mdf
+*.ldf
+*.suo
+*.tmp
+*.scc
+*.idb
+*.pdb
+*.ilk
+*.aps
+*.ncb
+*.ncb_backup
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+*.suo
+*.user
+*.userosscache
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+
+x64/
+
+MyOpenGLProject/Dependencies/

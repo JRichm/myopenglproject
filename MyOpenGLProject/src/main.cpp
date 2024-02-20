@@ -1,21 +1,24 @@
 #include <iostream>
 #include "utils/window.h"
 #include "utils/input.h"
+#include "utils/view.h"
 
 int main() {
+
+	// initialize glfw
+	if (!glfwInit()) {
+		// Handle the error or throw an exception
+		throw std::runtime_error("Failed to initialize GLFW");
+	}
 
 	// window instance
 	Window window("Hello World", 680, 480);
 
-	if (window.getGLFWWindow() == nullptr) {
-		// Handle the error or throw an exception
-		std::cout << "failed to initialize window" << std::endl;
-	}
-
-
-	// create input instance
+	// input instance
 	Input input(window);
 
+	// view instance
+	View view;
 
 	// main loop
 	while (!window.shouldClose()) {
@@ -24,8 +27,11 @@ int main() {
 		window.swapBuffers();
 		window.pollEvents();
 
-		input.writeDebug(window.getGLFWWindow());
+		//input.writeDebug(window.getGLFWWindow());
+		view.DebugLog();
 	}
+
+	glfwTerminate();
 
 	return 0;
 }

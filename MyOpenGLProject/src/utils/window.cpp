@@ -8,16 +8,8 @@ Window::Window(const char* title, int width, int height) : glfwWindow(nullptr) {
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	// initialize gl window
-	if (!glfwInit()) {
-		// Handle the error or throw an exception
-		throw std::runtime_error("Failed to initialize GLFW");
-	}
-
 	// create glfw window
 	glfwWindow = glfwCreateWindow(width, height, title, nullptr, nullptr);
-
-	
 
 	// make sure window is created
 	if (!glfwWindow) {
@@ -34,7 +26,6 @@ Window::~Window() {
 	std::cout << "kill window" << std::endl;
 	if (glfwWindow) {
 		glfwDestroyWindow(glfwWindow);
-		glfwTerminate();
 	}
 }
 

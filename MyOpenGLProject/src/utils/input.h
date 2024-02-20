@@ -9,6 +9,7 @@ class Input {
 		void processInput();
 		void writeDebug(GLFWwindow* window);
 
+		static Input* inputInstance;
 		static void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods);
 		static void cursorPositionCallback(GLFWwindow* window, double xpos, double ypos);
 

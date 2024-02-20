@@ -1,5 +1,6 @@
 #include <iostream>
 #include "utils/window.h"
+#include "utils/shader.h"
 #include "utils/input.h"
 #include "utils/view.h"
 
@@ -13,6 +14,11 @@ int main() {
 
 	// window instance
 	Window window("Hello World", 680, 480);
+
+	// shader instance
+	const char* vertexPath = "shaders/vertex.glsl";
+	const char* fragmentPath = "shaders/fragment.glsl";
+	Shader shader(vertexPath, fragmentPath);
 
 	// input instance
 	Input input(window);

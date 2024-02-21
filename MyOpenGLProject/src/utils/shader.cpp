@@ -4,6 +4,7 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath) {
 
 	std::cout << "Creating shader instance" << std::endl;
 
+	std::cout << "reading files" << std::endl;
 	std::string vertexCode = readFile(vertexPath);
 	std::string fragmentCode = readFile(fragmentPath);
 
@@ -45,10 +46,14 @@ std::string Shader::readFile(const char* filePath) {
 }
 
 unsigned int Shader::compileShader(const char* source, unsigned int type, const char* typeName, const char* filePath) {
+
+	std::cout << "compiling " << typeName << std::endl;
 	unsigned int shaderID = glCreateShader(type);
 	glShaderSource(shaderID, 1, &source, nullptr);
 	glCompileShader(shaderID);
-
+	
+	std::cout << "checking success" << std::endl;
+		
 	int success;
 	char infoLog[512];
 	glGetShaderiv(shaderID, GL_COMPILE_STATUS, &success);

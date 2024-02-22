@@ -6,6 +6,11 @@
 
 int main() {
 
+	// give window opengl version data
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+
 	// initialize glfw
 	if (!glfwInit()) {
 		// Handle the error or throw an exception
@@ -15,10 +20,9 @@ int main() {
 	// window instance
 	Window window("Hello World", 680, 480);
 
-	// shader instance
-	const char* vertexPath = "shaders/vertex.glsl";
-	const char* fragmentPath = "shaders/fragment.glsl";
-	Shader shader(vertexPath, fragmentPath);
+	// add window to current context
+	glfwMakeContextCurrent(window.getGLFWWindow());
+	//glfwSetWindowUserPointer(window.getGLFWWindow());
 
 	// input instance
 	Input input(window);

@@ -19,6 +19,6 @@ class Shader {
 		unsigned int programID;
 
 		std::string readFile(const char* filePath);
-		unsigned int compileShader(const char* source, unsigned int type, const char* typeName, const char* filePath);
+		unsigned int compileShader(const char* source, int type, const char* typeName);
 		unsigned int linkProgram(unsigned int vertexShader, unsigned int fragmentShader);
 };
